@@ -7,11 +7,11 @@ import (
 
 func main() {
 	d := new(card.Deck)
-	trials := 999123
+	trials := 1000000
 	c := 0
 	for i := 0; i < trials; i++ {
 		d.Init()
-		for j := 0; j < 10; j++ {
+		for j := 0; j < 100; j++ {
 			d.Shuffle()
 		}
 		//d.PrintDeck()
